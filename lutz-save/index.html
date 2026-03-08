@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lutz Savefile Editor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="center">Lutz Save Editor</h1>
+    <p class="center">working for idle dice 2 and idle superpowers</p>
+    <div class="center">
+        <textarea id="text" class="rainbow-border"></textarea>
+        <button id="convert" class="rainbow-border">Convert</button>
+        <button class="rainbow-border" onclick="navigator.clipboard.writeText(document.getElementById('text').value)">Copy</button>
+    <div>
+</body>
+</html>
