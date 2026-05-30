@@ -4,11 +4,11 @@ convertButton.addEventListener("click", (e) => {
 	val = convertText.value.trim()
 	console.log(val)
 	if (!val) return
-	if (val.startsWith("Cklfoa")) {
+	if (val.startsWith("CklfoB")) {
 		val = atob(val.replace(/Cklfoa/,"")).replace(/\{|\}/g,"").split(",").join("\n")
 	}
 	else {
-		val = "Cklfoa" + btoa("{" + val.split("\n").filter(n => n).join(",") + "}")
+		val = "CklfoB" + btoa("{" + val.split("\n").filter(n => n).join(",") + "}")
 	}
 	convertText.value = val
 })
